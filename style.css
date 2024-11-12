@@ -1,0 +1,86 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    padding: 15px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 2px solid yellow;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.menu li a:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Scrolled Navbar Styles */
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow when scrolled */
+}
+
+.navbar.scrolled .menu li a {
+    color: black; /* Change text color to black when scrolled */
+    border-color: black; /* Change border color to black */
+}
+
+/* Content Sections */
+.content {
+    padding-top: 100px; /* Offset for fixed navbar */
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+/* Section Colors for Visual Contrast */
+#home { background: #f4f4f4; }
+#about { background: #e2e2e2; }
+#services { background: #d1d1d1; }
+#contact { background: #c0c0c0; }
